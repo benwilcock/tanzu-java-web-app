@@ -1,6 +1,10 @@
 spring:
   application:
     name: tanzu-java-web-app
+  boot:
+    admin:
+      client:
+        url: http://spring-boot-admin.default.apps.3.136.111.3.nip.io
 management:
   endpoints:
     web:
