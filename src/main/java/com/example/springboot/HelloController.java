@@ -14,7 +14,7 @@ public class HelloController {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("uuuu/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
 
-		buf.append("Greetings from VMware, Spring Boot, and Tanzu!");
+		buf.append("Greetings from Ben, VMware, Spring Boot, and Tanzu!");
 		buf.append("<br>");
 		buf.append("The time is: " + dtf.format(now));
 		return buf.toString();
