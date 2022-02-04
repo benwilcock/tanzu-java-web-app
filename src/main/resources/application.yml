@@ -6,7 +6,9 @@ spring:
       client:
         url: http://spring-boot-admin.default.apps.3.136.111.3.nip.io
         instance:
-          prefer-ip: true
+          # prefer-ip: true
+          service-base-url: https://${spring.application.name}.default.apps.3.136.111.3.nip.io
+
 management:
   endpoints:
     web:
