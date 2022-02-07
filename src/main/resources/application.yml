@@ -4,9 +4,11 @@ spring:
   boot:
     admin:
       client:
-        url: http://spring-boot-admin.default.apps.3.136.111.3.nip.io
+        # url: http://spring-boot-admin.default.apps.3.136.111.3.nip.io
+        url: http://spring-boot-admin.default.svc.cluster.local
         instance:
-          service-base-url: http://${spring.application.name}.default.apps.3.136.111.3.nip.io
+          # service-base-url: http://${spring.application.name}.default.apps.3.136.111.3.nip.io
+          service-base-url: http://${spring.application.name}.default.svc.cluster.local
 management:
   endpoints:
     web:
