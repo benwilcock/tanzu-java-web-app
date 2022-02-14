@@ -34,8 +34,8 @@ public class Application {
 
 		};
 	}
-	
-    	@Bean
+
+	@Bean
 	public HttpTraceRepository htttpTraceRepository() {
 		return new InMemoryHttpTraceRepository();
 	}
@@ -44,8 +44,8 @@ public class Application {
 	public static class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
-			http.authorizeRequests().anyRequest().permitAll()  
-				.and().csrf().disable();
+			http.authorizeRequests().anyRequest().permitAll()
+					.and().csrf().disable();
 		}
 	}
 }

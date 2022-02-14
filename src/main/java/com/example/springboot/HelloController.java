@@ -18,6 +18,9 @@ public class HelloController {
 	@Value("${spring.application.name:tanzu-java-web-app}")
     String appName;
 
+	@Value("${message:Tanzu Application Platform}")
+	String message;
+
 	@RequestMapping("/")
 	public Map<String, String> index() {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("uuuu/MM/dd HH:mm:ss");
@@ -26,7 +29,7 @@ public class HelloController {
 		LOG.info("A request has been received for the /rest endpoint.");
 		Map<String, String> data = new HashMap<String, String>();
 		data.put("Application Name:", appName);
-		data.put("Greetings From:", "Ben, VMware, Spring Boot, and Tanzu!");
+		data.put("Greetings From:", message);
 		data.put("The Date & Time:", dtf.format(now));
 		LOG.debug("Returning {}.", data.toString());
 		return data;
