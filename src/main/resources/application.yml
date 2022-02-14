@@ -2,8 +2,7 @@ spring:
   application:
     name: tanzu-java-web-app
   config:
-    import: configserver:http://spring-config-server.default.svc.cluster.local
-    fail-fast: true
+    import: optional:configserver:http://spring-config-server.default.svc.cluster.local
   cloud:
     compatibility-verifier:
       enabled: true
