@@ -34,7 +34,7 @@ public class HelloController {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("uuuu/MM/dd HH:mm:ss");
         ZonedDateTime now = Instant.now().atZone(ZoneId.of(timezoneid));
 
-		LOG.info("A request has been received for the /rest endpoint.");
+		LOG.info("A request has been received for the / endpoint.");
 		Map<String, String> data = new HashMap<String, String>();
 		data.put("This Application Name:", appName);
 		data.put("Greetings! From:", message);
