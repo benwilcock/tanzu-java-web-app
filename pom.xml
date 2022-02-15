@@ -60,10 +60,10 @@
 		</dependency>
 
 		<!-- Kubernetes Features -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-kubernetes-fabric8-all</artifactId>
-		</dependency> -->
+			<artifactId>spring-cloud-starter-kubernetes-fabric8</artifactId>
+		</dependency>
 
 		<!-- live reload -->
 		<dependency>
