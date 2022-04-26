@@ -6,3 +6,5 @@ spring:
   cloud:
     compatibility-verifier:
       enabled: true
+
+configfrom: "YAML config (application.yml)"
