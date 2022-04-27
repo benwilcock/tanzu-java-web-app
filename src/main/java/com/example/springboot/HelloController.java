@@ -38,11 +38,11 @@ public class HelloController {
 
 		LOG.info("A request has been received for the / endpoint.");
 		Map<String, String> data = new HashMap<String, String>();
-		data.put("Application Name:", appName);
-		data.put("Greetings from:", message);
-		data.put("Config from:", configfrom);
-		data.put("Date & Time:", dtf.format(now));
-		data.put("Timezone:", timezoneid);
+		data.put("Application Name", appName);
+		data.put("Greetings from", message);
+		data.put("Config from", configfrom);
+		data.put("Date & Time", dtf.format(now));
+		data.put("Timezone", timezoneid);
 		LOG.debug("Returning {}.", data.toString());
 		return data;
 	}
