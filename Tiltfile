@@ -20,5 +20,3 @@ k8s_custom_deploy(
 
 k8s_resource('tanzu-java-web-app', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'tanzu-java-web-app'}])
-
-# allow_k8s_contexts('cloudgate@wilcockb@tap009.us-east-2.eksctl.io')
