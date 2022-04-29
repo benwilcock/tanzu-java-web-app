@@ -7,3 +7,14 @@ tanzu apps workload create tanzu-java-web-app \
  --label tanzu.app.live.view.application.name=tanzu-java-web-app \
  --yes \
  --namespace default
+
+tanzu apps workload create tanzu-java-web-app \
+  --git-repo https://github.com/benwilcock/tanzu-java-web-app \
+  --git-branch main \
+  --type web \
+  --label app.kubernetes.io/part-of=tanzu-java-web-app \
+  --label tanzu.app.live.view=true \
+  --label tanzu.app.live.view.application.name=tanzu-java-web-app \
+  --annotation autoscaling.knative.dev/minScale=1 \
+  --namespace default \
+  --yes 

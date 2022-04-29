@@ -39,7 +39,7 @@ public class HelloController {
 		LOG.info("A request has been received for the / endpoint.");
 		Map<String, String> data = new HashMap<String, String>();
 		data.put("Application Name", appName);
-		data.put("Greetings from Webinar", message);
+		data.put("Greetings", message);
 		data.put("Config from", configfrom);
 		data.put("Date & Time", dtf.format(now));
 		data.put("Timezone", timezoneid);
