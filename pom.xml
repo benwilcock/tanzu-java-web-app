@@ -14,8 +14,9 @@
 	<description>Demo project for Tanzu Application Platform</description>
 
 	<properties>
-		<java.version>11</java.version>
-		<spring-cloud.version>2021.0.0</spring-cloud.version>
+		<java.version>8</java.version>
+		<!-- <java.version>11</java.version> -->
+		<!-- <spring-cloud.version>2021.0.0</spring-cloud.version> -->
 	</properties>
 
 	<licenses>
