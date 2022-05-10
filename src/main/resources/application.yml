@@ -7,8 +7,4 @@ spring:
     compatibility-verifier:
       enabled: true
 
-logging:
-  file:
-    name: "/tmp/tanzu-java-web-app.log"
-
 configfrom: "YAML config (application.yml)"
